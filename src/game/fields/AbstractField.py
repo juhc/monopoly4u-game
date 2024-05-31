@@ -1,5 +1,4 @@
 from abc import ABC, abstractmethod
-from Player import Player
 
 class AbstractField(ABC):
     def __init__(self, name: str) -> None:
