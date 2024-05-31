@@ -1,0 +1,319 @@
+---
+# 0
+- type: StartField
+
+# 1
+- type: CommonField
+  name: Sweet'ok
+  group: 0
+  rent: 20
+  one_house_rent: 100
+  two_houses_rent: 300
+  three_houses_rent: 700
+  four_houses_rent: 1300
+  hotel_rent: 2100
+
+# 2
+- type: ChanceField
+
+# 3
+- type: CommonField
+  name: Лаваш
+  group: 0
+  rent: 40 # +20
+  one_house_rent: 200 # +100
+  two_houses_rent: 500 # +200
+  three_houses_rent: 1000 # +300
+  four_houses_rent: 1700 # +400
+  hotel_rent: 2600 # +500
+
+# 4
+- type: TaxField
+  name: Подоходный налог
+  value: 2000
+
+# 5
+- type: SpecialField
+  name: Garden
+  group: 
+  cost: 2000
+
+# 6
+- type: CommonField
+  name: Окей
+  group: 1
+  rent: 60
+  one_house_rent: 300
+  two_houses_rent: 700
+  three_houses_rent: 1300
+  four_houses_rent: 2100
+  hotel_rent: 3100
+
+# 7
+- type: ChanceField
+
+# 8
+- type: CommonField
+  name: Ашан
+  group: 1
+  rent: 60
+  one_house_rent: 300
+  two_houses_rent: 700
+  three_houses_rent: 1300
+  four_houses_rent: 2100
+  hotel_rent: 3100
+
+# 9
+- type: CommonField
+  name: Лента
+  group: 1
+  rent: 80
+  one_house_rent: 400
+  two_houses_rent: 900
+  three_houses_rent: 1600
+  four_houses_rent: 2500
+  hotel_rent: 3600
+
+# 10
+- type: JailField
+
+# 11
+- type: CommonField
+  name: Ростелеком
+  group: 2
+  rent: 100
+  one_house_rent: 500
+  two_houses_rent: 1100
+  three_houses_rent: 1900
+  four_houses_rent: 2900
+  hotel_rent: 4100
+
+# 12
+- type: SpecialField
+  name: Leroy Merlin
+  group: 9
+  cost: 1500
+
+# 13
+- type: CommonField
+  name: Русская компания
+  group: 2
+  rent: 100
+  one_house_rent: 500
+  two_houses_rent: 1100
+  three_houses_rent: 1900
+  four_houses_rent: 2900
+  hotel_rent: 4100
+
+# 14
+- type: CommonField
+  name: Дом.ру
+  group: 2
+  rent: 120
+  one_house_rent: 600
+  two_houses_rent: 1300
+  three_houses_rent: 2200
+  four_houses_rent: 3300
+  hotel_rent: 4600
+
+# 15
+- type: SpecialField
+  name: Coffee Like
+  group: 8
+  cost: 2000
+
+# 16
+- type: CommonField
+  name: ТюмГМУ
+  group: 3
+  rent: 140
+  one_house_rent: 700
+  two_houses_rent: 1500
+  three_houses_rent: 2500
+  four_houses_rent: 3700
+  hotel_rent: 5100
+
+# 17
+- type: ChanceField
+
+# 18
+- type: CommonField
+  name: ТюмГУ
+  group: 3
+  rent: 140
+  one_house_rent: 700
+  two_houses_rent: 1500
+  three_houses_rent: 2500
+  four_houses_rent: 3700
+  hotel_rent: 5100
+
+# 19
+- type: CommonField
+  name: ТИУ
+  group: 3
+  rent: 160
+  one_house_rent: 800
+  two_houses_rent: 1700
+  three_houses_rent: 2800
+  four_houses_rent: 4100
+  hotel_rent: 5600
+
+# 20
+- type:	JackpotField
+
+# 21
+- type: CommonField
+  name:	Билайн
+  group: 4
+  rent: 180
+  one_house_rent: 900
+  two_houses_rent: 1900
+  three_houses_rent: 3100
+  four_houses_rent: 4500
+  hotel_rent: 6100
+
+# 22
+- type:	ChanceField
+
+# 23
+- type: CommonField
+  name:	Мегафон
+  group: 4
+  rent: 180
+  one_house_rent: 900
+  two_houses_rent: 1900
+  three_houses_rent: 3100
+  four_houses_rent: 4500
+  hotel_rent: 6100
+
+# 24
+- type: CommonField
+  name:	МТС
+  group: 4
+  rent: 200
+  one_house_rent: 1000
+  two_houses_rent: 2100
+  three_houses_rent: 3400
+  four_houses_rent: 4900
+  hotel_rent: 6600
+
+# 25
+- type: SpecialField
+  name:	ТортШер
+  group: 8
+  cost: 2000
+
+# 26
+- type: CommonField
+  name:	ВТБ
+  group: 5
+  rent: 220
+  one_house_rent: 1100
+  two_houses_rent: 2300
+  three_houses_rent: 3700
+  four_houses_rent: 5300
+  hotel_rent: 7100
+
+# 27
+- type: CommonField
+  name:	Тинькофф
+  group: 5
+  rent: 220
+  one_house_rent: 1100
+  two_houses_rent: 2300
+  three_houses_rent: 3700
+  four_houses_rent: 5300
+  hotel_rent: 7100
+
+# 28
+- type: SpecialField
+  name:	Строительный двор
+  group: 9
+  cost: 1500
+
+# 29
+- type: CommonField
+  name:	Сбербанк
+  group: 5
+  rent: 240
+  one_house_rent: 1200
+  two_houses_rent: 2500
+  three_houses_rent: 4000
+  four_houses_rent: 5700
+  hotel_rent: 7600
+
+# 30
+- type:	GoToJailField
+
+# 31
+- type: CommonField
+  name:	Роснефть
+  group: 6
+  rent: 260
+  one_house_rent: 1300
+  two_houses_rent: 2700
+  three_houses_rent: 4300
+  four_houses_rent: 6100
+  hotel_rent: 8100
+
+# 32
+- type: CommonField
+  name:	Лукойл
+  group: 6
+  rent: 260
+  one_house_rent: 1300
+  two_houses_rent: 2700
+  three_houses_rent: 4300
+  four_houses_rent: 6100
+  hotel_rent: 8100
+
+# 33
+- type:	ChanceField
+
+# 34
+- type: CommonField
+  name:	Газпром
+  group: 6
+  rent: 280
+  one_house_rent: 1400
+  two_houses_rent: 2900
+  three_houses_rent: 4600
+  four_houses_rent: 6500
+  hotel_rent: 8600
+
+# 35
+- type: SpecialField
+  name: Паруса
+  group: 8
+  cost: 2000
+
+# 36
+- type:	TaxField
+  name: Налог на роскошь
+  value: 1000
+
+# 37
+- type: CommonField
+  name:	Pizza Mia
+  group: 7
+  rent: 300
+  one_house_rent: 1500
+  two_houses_rent: 3100
+  three_houses_rent: 4900
+  four_houses_rent: 6900
+  hotel_rent: 9100
+
+# 38
+- type:	ChanceField
+
+# 39
+- type: CommonField
+  name:	Додо пицца
+  group: 7
+  rent: 320
+  one_house_rent: 1600
+  two_houses_rent: 3300
+  three_houses_rent: 5200
+  four_houses_rent: 7300
+  hotel_rent: 9600
+...
