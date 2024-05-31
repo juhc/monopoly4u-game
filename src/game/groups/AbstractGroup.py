@@ -1,4 +1,4 @@
-from abc import ABC, abstractmethod
+from abc import ABC
 
 class AbstractGroup(ABC):
     def __init__(self, name: str, color: str, fields: list[int]) -> None:
