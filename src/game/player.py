@@ -1,4 +1,4 @@
-from fields import AbstractField, StartField
+from fields import AbstractField
 
 class Player:
     def __init__(self, name:str) -> None:

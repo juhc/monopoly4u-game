@@ -1,10 +1,13 @@
 from abc import ABC
+#from fields import SellingField
+
 
 class AbstractGroup(ABC):
-    def __init__(self, name: str, color: str, fields: list[int]) -> None:
+    def __init__(self, name: str, color: str, field_cost: int) -> None:
         self.__name = name
         self.__color = color
-        self.__fields = fields
+        self.__field_cost = field_cost
+        self.__fields = []
 
     @property
     def name(self) -> str:
@@ -15,5 +18,9 @@ class AbstractGroup(ABC):
         return self.__color
     
     @property
-    def fields(self) -> list[int]:
+    def field_cost(self) -> int:
+        return self.__field_cost
+    
+    @property
+    def fields(self) -> list:
         return self.__fields

@@ -3,99 +3,71 @@
 - type: CommonGroup
   name: Шаурма
   color: "#fff100"
-  fields:
-  - 1
-  - 3
   field_cost: 400
+  #fields: [1, 3]
 
 # 1
 - type: CommonGroup
   name: Гипермаркеты
   color: "#ff8c00"
-  fileds:
-  - 6
-  - 8
-  - 9
   field_cost: 800
+  #fields: [6, 8, 9]
 
 # 2
 - type: CommonGroup
   name: Интернет провайдеры
   color: "#e81123"
-  fields:
-  - 11
-  - 13
-  - 14
   field_cost: 1200
+  #fields: [11, 13, 14]
 
 # 3
 - type: CommonGroup
   name: Университеты
   color: "#ec008c"
-  fields:
-  - 16
-  - 18
-  - 19
   field_cost: 1600
+  #fields: [16, 18, 19]
 
 # 4
 - type: CommonGroup
   name: Сотовые операторы
   color: "#68217a"
-  fields:
-  - 21
-  - 23
-  - 24
   field_cost: 2000
+  #fields: [21, 23, 24]
 
 # 5
 - type: CommonGroup
   name: Банки
   color: "#00188f"
-  fields:
-  - 26
-  - 27
-  - 29
   field_cost: 2400
+  #fields: [26, 27, 29]
 
 # 6
 - type: CommonGroup
   name: Нефтедобыча
   color: "#00bcf2"
-  fields:
-  - 31
-  - 32
-  - 34
   field_cost: 2800
+  #fields: [31, 32, 34]
 
 # 7
 - type: CommonGroup
   name: Пиццерии
   color: "#00b294"
-  fields:
-  - 37
-  - 39
   field_cost: 3200
+  #fields: [37, 39]
 
 # 8
 - type: SpecialGroup
   name: Кофейни
   color: "#009e49"
-  fields:
-  - 5
-  - 15
-  - 25
-  - 35
   field_cost: 2000
+  #fields: [5, 15, 25, 35]
   operation: sum
 
 # 9
 - type: SpecialGroup
   name: Строительные магазины
   color: "#bad80a"
-  fields:
-  - 12
-  - 28
   field_cost: 1500
+  #fields: [12, 28]
   operation: multiplication
 ...

@@ -1,5 +1,5 @@
 from player import Player
-from fields import AbstractField, StartField
+from fields import AbstractField
 from dice import Dice
 
 
