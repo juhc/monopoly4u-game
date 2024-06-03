@@ -1,15 +1,19 @@
 from .abstract_field import AbstractField
-from groups import AbstractGroup
+from typing import TYPE_CHECKING
+if TYPE_CHECKING:
+    from groups import AbstractGroup
+
 
 class SellingField(AbstractField):
-    def __init__(self, name: str, group: AbstractGroup) -> None:
+    def __init__(self, name: str) -> None:
         super().__init__(name)
-        self.__group = group
+        self.__group: "AbstractGroup"
     
+    # Группа
     @property
-    def group(self) -> AbstractGroup:
+    def group(self) -> "AbstractGroup":
         return self.__group
     
     @group.setter
-    def group(self, value: AbstractGroup) -> None:
+    def group(self, value: "AbstractGroup") -> None:
         self.__group = value

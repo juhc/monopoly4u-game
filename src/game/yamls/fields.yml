@@ -8,17 +8,6 @@
 - type: CommonField
   name: Sweet'ok
   group: 0
-  #basic_rent: 20
-  #monopoly_rent: 35
-  #one_house_rent: 175
-  #two_houses_rent: 525
-  #three_houses_rent: 1225
-  #four_houses_rent: 2275
-  #hotel_rent: 3675
-  #cost: 400
-  #pledge: 200
-  #ransom: 240
-  #branch: 360
 
 # 2
 - type: ChanceField
@@ -27,17 +16,6 @@
 - type: CommonField
   name: Лаваш
   group: 0
-  #basic_rent: 40
-  #monopoly_rent: 70
-  #one_house_rent: 350
-  #two_houses_rent: 875
-  #three_houses_rent: 1750
-  #four_houses_rent: 2975
-  #hotel_rent: 4550
-  #cost: 400
-  #pledge: 200
-  #ransom: 240
-  #branch: 320
 
 # 4
 - type: TaxField
@@ -48,30 +26,11 @@
 - type: SpecialField
   name: Garden
   group: 8
-  #operation: sum
-  #one_field_rent: 250
-  #two_fields_rent: 500
-  #three_fields_rent: 1000
-  #four_fields_rent: 2000
-  #cost: 2000
-  #pledge: 1000
-  #ransom: 1200
 
 # 6
 - type: CommonField
   name: Окей
   group: 1
-  #basic_rent: 60
-  #monopoly_rent: 105
-  #one_house_rent: 525
-  #two_houses_rent: 1225
-  #three_houses_rent: 2275
-  #four_houses_rent: 3675
-  #hotel_rent: 5425
-  #cost: 800
-  #pledge: 400
-  #ransom: 480
-  #branch: 640
 
 # 7
 - type: ChanceField
@@ -80,33 +39,11 @@
 - type: CommonField
   name: Ашан
   group: 1
-  #basic_rent: 60
-  #monopoly_rent: 105
-  #one_house_rent: 525
-  #two_houses_rent: 1225
-  #three_houses_rent: 2275
-  #four_houses_rent: 3675
-  #hotel_rent: 5425
-  #cost: 800
-  #pledge: 400
-  #ransom: 480
-  #branch: 640
 
 # 9
 - type: CommonField
   name: Лента
   group: 1
-  #basic_rent: 80
-  #monopoly_rent: 140
-  #one_house_rent: 700
-  #two_houses_rent: 1575
-  #three_houses_rent: 2800
-  #four_houses_rent: 4375
-  #hotel_rent: 6300
-  #cost: 800
-  #pledge: 400
-  #ransom: 480
-  #branch: 640
 
 # 10
 - type: JailField
@@ -115,91 +52,31 @@
 - type: CommonField
   name: Ростелеком
   group: 2
-  #basic_rent: 100
-  #monopoly_rent: 175
-  #one_house_rent: 875
-  #two_houses_rent: 1925
-  #three_houses_rent: 3325
-  #four_houses_rent: 5075
-  #hotel_rent: 7175
-  #cost: 1200
-  #pledge: 600
-  #ransom: 720
-  #branch: 960
 
 # 12
 - type: SpecialField
   name: Leroy Merlin
   group: 9
-  #operation: multiplication
-  #one_field_rent: 100
-  #two_fields_rent: 250
-  #three_fields_rent:
-  #four_fields_rent:
-  #cost: 1500
-  #pledge: 750
-  #ransom: 900
 
 # 13
 - type: CommonField
   name: Русская компания
   group: 2
-  #basic_rent: 100
-  #monopoly_rent: 175
-  #one_house_rent: 875
-  #two_houses_rent: 1925
-  #three_houses_rent: 3325
-  #four_houses_rent: 5075
-  #hotel_rent: 7175
-  #cost: 1200
-  #pledge: 600
-  #ransom: 720
-  #branch: 960
 
 # 14
 - type: CommonField
   name: Дом.ру
   group: 2
-  #basic_rent: 120
-  #monopoly_rent: 210
-  #one_house_rent: 1050
-  #two_houses_rent: 2275
-  #three_houses_rent: 3850
-  #four_houses_rent: 5775
-  #hotel_rent: 8050
-  #cost: 1200
-  #pledge: 600
-  #ransom: 720
-  #branch: 960
 
 # 15
 - type: SpecialField
   name: Coffee Like
   group: 8
-  #operation: sum
-  #one_field_rent: 250
-  #two_fields_rent: 500
-  #three_fields_rent: 1000
-  #four_fields_rent: 2000
-  #cost: 2000
-  #pledge: 1000
-  #ransom: 1200
 
 # 16
 - type: CommonField
   name: ТюмГМУ
   group: 3
-  #basic_rent: 140
-  #monopoly_rent: 245
-  #one_house_rent: 1225
-  #two_houses_rent: 2625
-  #three_houses_rent: 4375
-  #four_houses_rent: 6475
-  #hotel_rent: 8925
-  #cost: 1600
-  #pledge: 800
-  #ransom: 960
-  #branch: 1280
 
 # 17
 - type: ChanceField
@@ -208,33 +85,11 @@
 - type: CommonField
   name: ТюмГУ
   group: 3
-  #basic_rent: 140
-  #monopoly_rent: 245
-  #one_house_rent: 1225
-  #two_houses_rent: 2625
-  #three_houses_rent: 4375
-  #four_houses_rent: 6475
-  #hotel_rent: 8925
-  #cost: 1600
-  #pledge: 800
-  #ransom: 960
-  #branch: 1280
 
 # 19
 - type: CommonField
   name: ТИУ
   group: 3
-  #basic_rent: 160
-  #monopoly_rent: 280
-  #one_house_rent: 1400
-  #two_houses_rent: 2975
-  #three_houses_rent: 4900
-  #four_houses_rent: 7175
-  #hotel_rent: 9800
-  #cost: 1600
-  #pledge: 800
-  #ransom: 960
-  #branch: 1280
 
 # 20
 - type: JackpotField
@@ -243,17 +98,6 @@
 - type: CommonField
   name: Билайн
   group: 4
-  #basic_rent: 180
-  #monopoly_rent: 315
-  #one_house_rent: 1575
-  #two_houses_rent: 3325
-  #three_houses_rent: 5425
-  #four_houses_rent: 7875
-  #hotel_rent: 10675
-  #cost: 2000
-  #pledge: 1000
-  #ransom: 1200
-  #branch: 1600
 
 # 22
 - type: ChanceField
@@ -262,107 +106,36 @@
 - type: CommonField
   name: Мегафон
   group: 4
-  #basic_rent: 180
-  #monopoly_rent: 315
-  #one_house_rent: 1575
-  #two_houses_rent: 3325
-  #three_houses_rent: 5425
-  #four_houses_rent: 7875
-  #hotel_rent: 10675
-  #cost: 2000
-  #pledge: 1000
-  #ransom: 1200
-  #branch: 1600
 
 # 24
 - type: CommonField
   name: МТС
   group: 4
-  #basic_rent: 200
-  #monopoly_rent: 350
-  #one_house_rent: 1750
-  #two_houses_rent: 3675
-  #three_houses_rent: 5950
-  #four_houses_rent: 8575
-  #hotel_rent: 11550
-  #cost: 2000
-  #pledge: 1000
-  #ransom: 1200
-  #branch: 1600
 
 # 25
 - type: SpecialField
   name: ТортШер
   group: 8
-  #operation: sum
-  #one_field_rent: 250
-  #two_fields_rent: 500
-  #three_fields_rent: 1000
-  #four_fields_rent: 2000
-  #cost: 2000
-  #pledge: 1000
-  #ransom: 1200
 
 # 26
 - type: CommonField
   name: ВТБ
   group: 5
-  #basic_rent: 220
-  #monopoly_rent: 385
-  #one_house_rent: 1925
-  #two_houses_rent: 4025
-  #three_houses_rent: 6475
-  #four_houses_rent: 9275
-  #hotel_rent: 12425
-  #cost: 2400
-  #pledge: 1200
-  #ransom: 1440
-  #branch: 1920
 
 # 27
 - type: CommonField
   name: Тинькофф
   group: 5
-  #basic_rent: 220
-  #monopoly_rent: 385
-  #one_house_rent: 1925
-  #two_houses_rent: 4025
-  #three_houses_rent: 6475
-  #four_houses_rent: 9275
-  #hotel_rent: 12425
-  #cost: 2400
-  #pledge: 1200
-  #ransom: 1440
-  #branch: 1920
 
 # 28
 - type: SpecialField
   name: Строительный двор
   group: 9
-  #operation: multiplication
-  #one_field_rent: 100
-  #two_fields_rent: 250
-  #three_fields_rent:
-  #four_fields_rent:
-  #cost: 1500
-  #pledge: 750
-  #ransom: 900
 
 # 29
 - type: CommonField
   name: Сбербанк
   group: 5
-  #basic_rent: 240
-  #monopoly_rent: 420
-  #one_house_rent: 2100
-  #two_houses_rent: 4375
-  #three_houses_rent: 7000
-  #four_houses_rent: 9975
-  #hotel_rent: 13300
-  #cost: 2400
-  #pledge: 1200
-  #ransom: 1440
-  #branch: 1920
 
 # 30
 - type: GoToJailField
@@ -371,33 +144,11 @@
 - type: CommonField
   name: Роснефть
   group: 6
-  #basic_rent: 260
-  #monopoly_rent: 455
-  #one_house_rent: 2275
-  #two_houses_rent: 4725
-  #three_houses_rent: 7525
-  #four_houses_rent: 10675
-  #hotel_rent: 14175
-  #cost: 2800
-  #pledge: 1400
-  #ransom: 1680
-  #branch: 2240
 
 # 32
 - type: CommonField
   name: Лукойл
   group: 6
-  #basic_rent: 260
-  #monopoly_rent: 455
-  #one_house_rent: 2275
-  #two_houses_rent: 4725
-  #three_houses_rent: 7525
-  #four_houses_rent: 10675
-  #hotel_rent: 14175
-  #cost: 2800
-  #pledge: 1400
-  #ransom: 1680
-  #branch: 2240
 
 # 33
 - type: ChanceField
@@ -406,30 +157,11 @@
 - type: CommonField
   name: Газпром
   group: 6
-  #basic_rent: 280
-  #monopoly_rent: 490
-  #one_house_rent: 2450
-  #two_houses_rent: 5075
-  #three_houses_rent: 8050
-  #four_houses_rent: 11375
-  #hotel_rent: 15050
-  #cost: 2800
-  #pledge: 1400
-  #ransom: 1680
-  #branch: 2240
 
 # 35
 - type: SpecialField
   name: Паруса
   group: 8
-  #operation: sum
-  #one_field_rent: 250
-  #two_fields_rent: 500
-  #three_fields_rent: 1000
-  #four_fields_rent: 2000
-  #cost: 2000
-  #pledge: 1000
-  #ransom: 1200
 
 # 36
 - type: TaxField
@@ -440,17 +172,6 @@
 - type: CommonField
   name: Pizza Mia
   group: 7
-  #basic_rent: 300
-  #monopoly_rent: 525
-  #one_house_rent: 2625
-  #two_houses_rent: 5425
-  #three_houses_rent: 8575
-  #four_houses_rent: 12075
-  #hotel_rent: 15925
-  #cost: 3200
-  #pledge: 1600
-  #ransom: 1920
-  #branch: 2560
 
 # 38
 - type: ChanceField
@@ -459,15 +180,4 @@
 - type: CommonField
   name: Додо пицца
   group: 7
-  #basic_rent: 320
-  #monopoly_rent: 560
-  #one_house_rent: 2800
-  #two_houses_rent: 5775
-  #three_houses_rent: 9100
-  #four_houses_rent: 12775
-  #hotel_rent: 16800
-  #cost: 3200
-  #pledge: 1600
-  #ransom: 1920
-  #branch: 2560
 ...

@@ -1,5 +1,5 @@
 from groups import AbstractGroup, CommonGroup, SpecialGroup
-from fields import AbstractField, SellingField, CommonField, SpecialField, ChanceField, TaxField, StartField, JailField, JackpotField, GoToJailField
+from fields import AbstractField, CommonField, SpecialField, ChanceField, TaxField, StartField, JailField, JackpotField, GoToJailField
 from pathlib import Path
 import yaml
 
@@ -29,22 +29,20 @@ class FieldsBuilder:
         self.__groups: list[AbstractGroup] = []
 
         for group_args in raw_groups:
-            group_type = types_dict[group_args["type"]]
-            group_args.pop("type", None)
+            group_type = types_dict[group_args.pop("type")]
             self.__groups.append(group_type(**group_args))
 
         for field_args in raw_fields:
-            field_type = types_dict[field_args["type"]]
-            field_args.pop("type", None)
-            group_index = field_args.get("group")
+            field_type = types_dict[field_args.pop("type")]
+            group_index = field_args.pop("group", None)
             
+            field = field_type(**field_args)
+
+            self.__fields.append(field)
+
             if group_index is not None:
-                field_args["group"] = self.__groups[group_index]
-            
-            self.__fields.append(field_type(**field_args))
-            
-            if group_index is not None:
-                self.__groups[group_index].fields.append(self.__fields[-1])
+                field.group = self.__groups[group_index]
+                self.__groups[group_index].fields.append(field)
     
     @property
     def fields(self) -> list[AbstractField]:
