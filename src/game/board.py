@@ -4,10 +4,10 @@ from dice import Dice
 
 
 class Board:
-    def __init__(self) -> None:
-        self.__players: list[Player]
+    def __init__(self, players: list[Player]) -> None:
+        self.__players = players
         self.__current_player: Player
-        self.__fields: list[AbstractField]
+        self.__fields: list[AbstractField] = [AbstractField(f"test {i}") for i in range(40)]
         self.__dice = Dice()
 
     def add_player(self, player: Player) -> None:

@@ -1,7 +1,5 @@
 from fastapi import APIRouter, Depends, Request
 
-import json
-
 from .services import RoomService
 from .schemas import (
     RoomResponse,
@@ -10,6 +8,10 @@ from .schemas import (
     UserRoomResponse,
 )
 
+from game.board import Board
+from game.player import Player
+from game.board_manager import BoardManager
+
 from database import db_helper
 
 from rooms_users.services import RoomsUsersService
@@ -17,6 +19,7 @@ from rooms_users.services import RoomsUsersService
 
 router = APIRouter(prefix="/rooms", tags=["Rooms"])
 
+board_manager = BoardManager()
 
 @router.post("/")
 async def add_room(
@@ -101,3 +104,13 @@ async def delete_player_state(
     )
 
     return deleted_player
+
+
+@router.post("/{room_id}/game")
+async def init_game(room_id: int, session=Depends(db_helper.session_dependency)):
+    room_players = await RoomsUsersService(session=session).select_all(room_id=room_id)
+    players = [Player(name=player.username) for player in room_players]
+    game = Board(players)
+    board_manager.add_board(room_id=room_id, board=game)
+
+

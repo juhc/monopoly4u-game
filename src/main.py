@@ -15,7 +15,3 @@ app.add_middleware(
 )
 
 app.include_router(rooms_router)
-
-@app.get('/')
-async def index():
-    return {"data": "hello world!!!"}

@@ -5,8 +5,8 @@ class Cube:
     def __init__(self) -> None:
         self.__score: int
 
-    def roll(self)-> int:
-        self.__score = random.randint(1,6)
+    def roll(self) -> int:
+        self.__score = random.randint(1, 6)
         return self.__score
 
     @property
@@ -16,6 +16,7 @@ class Cube:
 
         return 0
 
+
 class Dice:
     def __init__(self) -> None:
         self.__score: int
@@ -24,13 +25,11 @@ class Dice:
     def roll(self) -> int:
         self.__score = sum([cube.roll() for cube in self.__cubes])
         return self.__score
-    
+
     def get_cubes(self) -> list[int]:
         return [cube.score for cube in self.__cubes]
-    
+
     @property
     def is_double(self) -> bool:
         cubes_scores = self.get_cubes()
         return all([cube == cubes_scores[0] for cube in cubes_scores])
-    
-            
