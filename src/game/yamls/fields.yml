@@ -1,8 +1,6 @@
 ---
 # 0
 - type: StartField
-  lap_bonus: 2000
-  field_bonus: 1000
  
 # 1
 - type: CommonField

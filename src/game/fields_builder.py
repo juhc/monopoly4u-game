@@ -1,5 +1,10 @@
 from pathlib import Path
+from typing import TYPE_CHECKING
 import yaml
+
+if TYPE_CHECKING:
+    from groups import AbstractGroup
+    from fields import AbstractField
 
 from .groups import AbstractGroup, CommonGroup, SpecialGroup
 from .fields import (
@@ -31,6 +36,9 @@ types_dict = {
 
 class FieldsBuilder:
     def __init__(self) -> None:
+        self.__groups: list["AbstractGroup"] = []
+        self.__fields: list["AbstractField"] = []
+
         with open(
             Path(__file__).parent / "yamls" / "groups.yml", encoding="utf-8"
         ) as f:
@@ -40,9 +48,6 @@ class FieldsBuilder:
             Path(__file__).parent / "yamls" / "fields.yml", encoding="utf-8"
         ) as f:
             raw_fields: list[dict] = yaml.safe_load(f)
-
-        self.__fields: list[AbstractField] = []
-        self.__groups: list[AbstractGroup] = []
 
         for group_args in raw_groups:
             group_type = types_dict[group_args.pop("type")]
@@ -63,6 +68,6 @@ class FieldsBuilder:
     @property
     def fields(self) -> list[AbstractField]:
         return self.__fields
-    
+
     def model_dump(self) -> list[dict]:
-        return [field.model_dump() for field in self.fields]   
+        return [field.model_dump() for field in self.fields]
