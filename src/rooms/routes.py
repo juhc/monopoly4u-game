@@ -21,6 +21,7 @@ router = APIRouter(prefix="/rooms", tags=["Rooms"])
 
 board_manager = BoardManager()
 
+
 @router.post("/")
 async def add_room(
     request: Request,
@@ -55,6 +56,7 @@ async def get_room(
         room_id=room.id, players_total=room.players_total, users=room.players_states
     )
     return response
+
 
 @router.delete("/{room_id}")
 async def get_room(
@@ -107,10 +109,23 @@ async def delete_player_state(
 
 
 @router.post("/{room_id}/game")
-async def init_game(room_id: int, session=Depends(db_helper.session_dependency)):
-    room_players = await RoomsUsersService(session=session).select_all(room_id=room_id)
-    players = [Player(name=player.username) for player in room_players]
-    game = Board(players)
-    board_manager.add_board(room_id=room_id, board=game)
+async def init_game(room_id: int):
+    if room_id not in board_manager.boards.keys():
+        game = Board()
+        board_manager.add_board(room_id=room_id, board=game)
 
+    return board_manager.boards[room_id]
+
+
+@router.patch("/{room_id}/game")
+async def add_player_in_game(room_id: int, username: str):
+    board_manager.boards[room_id].add_player(Player(username))
+
+    return board_manager.boards[room_id]
+
+@router.post("/{room_id}/game/start")
+async def start_game(room_id: int):
+    board_manager.boards[room_id].start()
+
+    return board_manager.boards[room_id]
 

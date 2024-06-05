@@ -1,4 +1,5 @@
-from abc import ABC, abstractmethod
+from abc import ABC
+
 
 class AbstractField(ABC):
     def __init__(self, name: str) -> None:
@@ -7,3 +8,6 @@ class AbstractField(ABC):
     @property
     def name(self) -> str:
         return self.__name
+    
+    def model_dump(self) -> dict:
+        return {"name": self.name}

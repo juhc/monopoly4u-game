@@ -1,0 +1,183 @@
+---
+# 0
+- type: StartField
+  lap_bonus: 2000
+  field_bonus: 1000
+ 
+# 1
+- type: CommonField
+  name: Sweet'ok
+  group: 0
+
+# 2
+- type: ChanceField
+
+# 3
+- type: CommonField
+  name: Лаваш
+  group: 0
+
+# 4
+- type: TaxField
+  name: Подоходный налог
+  value: 2000
+
+# 5
+- type: SpecialField
+  name: Garden
+  group: 8
+
+# 6
+- type: CommonField
+  name: Окей
+  group: 1
+
+# 7
+- type: ChanceField
+
+# 8
+- type: CommonField
+  name: Ашан
+  group: 1
+
+# 9
+- type: CommonField
+  name: Лента
+  group: 1
+
+# 10
+- type: JailField
+
+# 11
+- type: CommonField
+  name: Ростелеком
+  group: 2
+
+# 12
+- type: SpecialField
+  name: Leroy Merlin
+  group: 9
+
+# 13
+- type: CommonField
+  name: Русская компания
+  group: 2
+
+# 14
+- type: CommonField
+  name: Дом.ру
+  group: 2
+
+# 15
+- type: SpecialField
+  name: Coffee Like
+  group: 8
+
+# 16
+- type: CommonField
+  name: ТюмГМУ
+  group: 3
+
+# 17
+- type: ChanceField
+
+# 18
+- type: CommonField
+  name: ТюмГУ
+  group: 3
+
+# 19
+- type: CommonField
+  name: ТИУ
+  group: 3
+
+# 20
+- type: JackpotField
+
+# 21
+- type: CommonField
+  name: Билайн
+  group: 4
+
+# 22
+- type: ChanceField
+
+# 23
+- type: CommonField
+  name: Мегафон
+  group: 4
+
+# 24
+- type: CommonField
+  name: МТС
+  group: 4
+
+# 25
+- type: SpecialField
+  name: ТортШер
+  group: 8
+
+# 26
+- type: CommonField
+  name: ВТБ
+  group: 5
+
+# 27
+- type: CommonField
+  name: Тинькофф
+  group: 5
+
+# 28
+- type: SpecialField
+  name: Строительный двор
+  group: 9
+
+# 29
+- type: CommonField
+  name: Сбербанк
+  group: 5
+
+# 30
+- type: GoToJailField
+
+# 31
+- type: CommonField
+  name: Роснефть
+  group: 6
+
+# 32
+- type: CommonField
+  name: Лукойл
+  group: 6
+
+# 33
+- type: ChanceField
+
+# 34
+- type: CommonField
+  name: Газпром
+  group: 6
+
+# 35
+- type: SpecialField
+  name: Паруса
+  group: 8
+
+# 36
+- type: TaxField
+  name: Налог на роскошь
+  value: 1000
+
+# 37
+- type: CommonField
+  name: Pizza Mia
+  group: 7
+
+# 38
+- type: ChanceField
+
+# 39
+- type: CommonField
+  name: Додо пицца
+  group: 7
+...
