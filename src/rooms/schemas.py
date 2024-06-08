@@ -1,4 +1,5 @@
 from pydantic import BaseModel
+from game.schemas import BoardResponse
 
 
 class UserRoomResponse(BaseModel):
@@ -31,3 +32,6 @@ class RoomResponse(BaseModel):
 
     class Config:
         from_attributes = True
+
+class MakeMoveResponse(BoardResponse):
+    description: str | None

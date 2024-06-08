@@ -1,0 +1,63 @@
+---
+# 0
+- type: CommonGroup
+  name: Шаурма
+  color: "#fff100"
+  field_cost: 400
+
+# 1
+- type: CommonGroup
+  name: Гипермаркеты
+  color: "#ff8c00"
+  field_cost: 800
+
+# 2
+- type: CommonGroup
+  name: Интернет провайдеры
+  color: "#e81123"
+  field_cost: 1200
+
+# 3
+- type: CommonGroup
+  name: Университеты
+  color: "#ec008c"
+  field_cost: 1600
+
+# 4
+- type: CommonGroup
+  name: Сотовые операторы
+  color: "#68217a"
+  field_cost: 2000
+
+# 5
+- type: CommonGroup
+  name: Банки
+  color: "#00188f"
+  field_cost: 2400
+
+# 6
+- type: CommonGroup
+  name: Нефтедобыча
+  color: "#00bcf2"
+  field_cost: 2800
+
+# 7
+- type: CommonGroup
+  name: Пиццерии
+  color: "#00b294"
+  field_cost: 3200
+
+# 8
+- type: SpecialGroup
+  name: Кофейни
+  color: "#009e49"
+  field_cost: 2000
+  operation: 0
+
+# 9
+- type: SpecialGroup
+  name: Строительные магазины
+  color: "#bad80a"
+  field_cost: 1500
+  operation: 1
+...

@@ -29,6 +29,11 @@ class RoomsUsersService:
         query = select(RoomsUsers).filter_by(**filter_by)
         result: Result = await self.__session.execute(query)
         return result.scalar_one_or_none()
+    
+    async def select_all(self, **filter_by):
+        query = select(RoomsUsers).filter_by(**filter_by)
+        result: Result = await self.__session.execute(query)
+        return result.scalars().all()
 
     async def delete_one(self, **filter_by):
         query = delete(RoomsUsers).filter_by(**filter_by).returning(RoomsUsers)
