@@ -1,5 +1,6 @@
 import random
 
+from .schemas import  DiceResponse
 
 class Cube:
     def __init__(self) -> None:
@@ -33,3 +34,14 @@ class Dice:
     def is_double(self) -> bool:
         cubes_scores = self.get_cubes()
         return all([cube == cubes_scores[0] for cube in cubes_scores])
+    
+    @property
+    def score(self) -> int:
+        return self.__score
+
+    def model_dump(self) -> DiceResponse:
+        return DiceResponse(
+            score=self.score,
+            cubes=self.get_cubes(),
+            is_double=self.is_double
+        )

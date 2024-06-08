@@ -1,7 +1,11 @@
-from field_action import FieldAction, ActionType
+from ..field_action import FieldAction, ActionType
 from .selling_field import SellingField
-from groups import Operation
+from ..groups import Operation
 
+import sys
+from pathlib import Path
+
+sys.path.append(Path(__file__).parent)
 
 class SpecialField(SellingField):
     def __init__(self, name: str) -> None:

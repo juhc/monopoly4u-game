@@ -1,6 +1,10 @@
-from field_action import FieldAction, ActionType
+from ..field_action import FieldAction, ActionType
 from .abstract_field import AbstractField
 
+import sys
+from pathlib import Path
+
+sys.path.append(Path(__file__).parent)
 
 class StartField(AbstractField):
     def __init__(self) -> None:

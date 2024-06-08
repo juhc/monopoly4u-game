@@ -18,6 +18,7 @@ from .fields import (
     JackpotField,
     GoToJailField,
 )
+from .schemas import FieldsBuilderResponse
 
 
 types_dict = {
@@ -69,5 +70,9 @@ class FieldsBuilder:
     def fields(self) -> list[AbstractField]:
         return self.__fields
 
-    def model_dump(self) -> list[dict]:
-        return [field.model_dump() for field in self.fields]
+    def model_dump(self) -> FieldsBuilderResponse:
+        fields = [field.model_dump().model_dump() for field in self.fields]
+        for index, key in enumerate(fields):
+            fields[key] = index
+            
+        return FieldsBuilderResponse(fields=fields)

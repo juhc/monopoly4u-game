@@ -1,8 +1,13 @@
 from .abstract_field import AbstractField, abstractmethod
-from field_action import FieldAction, ActionType
 from typing import TYPE_CHECKING
+from ..field_action import FieldAction, ActionType
 if TYPE_CHECKING:
     from groups import AbstractGroup
+
+import sys
+from pathlib import Path
+
+sys.path.append(Path(__file__).parent)
 
 
 class SellingField(AbstractField):

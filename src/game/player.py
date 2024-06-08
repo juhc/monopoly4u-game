@@ -1,4 +1,5 @@
 from .fields import AbstractField
+from .schemas import PlayerResponse
 
 
 class Player:
@@ -11,7 +12,7 @@ class Player:
         self.rounds_jail = 0
         self.in_jail = False
         self.properties: list[AbstractField] = []
-    
+
     @property
     def name(self) -> str:
         return self.__name
@@ -19,7 +20,7 @@ class Player:
     @property
     def current_field(self) -> AbstractField:
         return self.__current_field
-    
+
     @property
     def balance(self) -> int:
         return self.__balance
@@ -33,9 +34,6 @@ class Player:
     def previous_field(self) -> AbstractField:
         return self.__previous_field
 
-    def model_dump(self) -> dict:
-        return {
-            "name": self.name,
-            "current_field": self.current_field.model_dump(),
-            "balance": self.balance
-        }
+    def model_dump(self) -> PlayerResponse:
+        current_field = self.current_field.model_dump() if self.current_field else None
+        return PlayerResponse(name=self.name, balance=self.balance, current_field=current_field)

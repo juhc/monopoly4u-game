@@ -1,7 +1,11 @@
-from field_action import FieldAction, ActionType
+from ..field_action import FieldAction, ActionType
 from .abstract_field import AbstractField
 from random import randint
 
+import sys
+from pathlib import Path
+
+sys.path.append(Path(__file__).parent)
 
 class ChanceField(AbstractField):
     def __init__(self) -> None:

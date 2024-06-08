@@ -1,5 +1,10 @@
-from field_action import FieldAction, ActionType
+from ..field_action import FieldAction, ActionType
 from .selling_field import SellingField
+
+import sys
+from pathlib import Path
+
+sys.path.append(Path(__file__).parent)
 
 
 class CommonField(SellingField):

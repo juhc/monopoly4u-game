@@ -1,10 +1,14 @@
-from field_action import FieldAction, ActionType
+from ..field_action import FieldAction, ActionType
 from .abstract_field import AbstractField
 
+import sys
+from pathlib import Path
+
+sys.path.append(Path(__file__).parent)
 
 class JailField(AbstractField):
     def __init__(self) -> None:
-        super().__init__("Тюрьма / Посещение")
+        super().__init__("Тюрьма или Посещение")
         self.__prisoners: list[str] = []
         self.__getting_out_cost = 500
     
