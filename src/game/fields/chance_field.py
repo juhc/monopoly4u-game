@@ -28,7 +28,7 @@ class ChanceField(AbstractField):
             case ActionType.MOVE:
                 direction = randint(0, 1)
                 value = pow(-1, direction) * randint(2, 12)
-                description = f"Игрок {player_name} переходит на {abs(value)} {"поля" if abs(value) < 5 else "полей"} {"вперёд" if direction == 0 else "назад"}"
+                description = f"Игрок {player_name} переходит на {abs(value)} {'поля' if abs(value) < 5 else 'полей'} {'вперёд' if direction == 0 else 'назад'}"
             case ActionType.GO_TO_JAIL:
                 value = None
                 description = f"Игрок {player_name} отправляется в тюрьму"

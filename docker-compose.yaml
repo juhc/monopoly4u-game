@@ -22,7 +22,7 @@ services:
     networks:
       - postgres
 
-  game-app:
+  game:
     build: .
     command: ["/app/docker/app.sh"]
     ports:
